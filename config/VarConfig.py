@@ -1,0 +1,23 @@
+import os
+import time
+# print(os.path.dirname(__file__))
+parentDirPath = os.path.dirname(os.path.dirname(__file__))
+
+elementLocationPath = os.path.join(parentDirPath, u'config\config.ini')
+
+Chromepath=os.path.join(parentDirPath, u'chromedriver.exe')
+
+test_url=r'https://mail.163.com'
+auth_code = 'LXHRNCHDCWUYAQGG'#邮箱授权码
+excelpath=os.path.join(parentDirPath, u'data\\t_01.xlsx')
+reportpath=os.path.join(parentDirPath, u'report\\{}Test_report.html'.format(time.strftime('%Y-%m-%d')))
+logpath=os.path.join(parentDirPath, u'config\\log')
+
+
+if __name__ == '__main__':
+    print(Chromepath)
+    print(elementLocationPath)
+    print(parentDirPath)
+    print(excelpath)
+    print(reportpath)
+    print(logpath)
