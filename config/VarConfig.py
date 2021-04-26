@@ -8,6 +8,7 @@ elementLocationPath = os.path.join(parentDirPath, u'config\config.ini')
 Chromepath=os.path.join(parentDirPath, u'chromedriver.exe')
 
 test_url=r'https://mail.163.com'
+#NBBKZIBDBVDTURJG    TG笔记本
 auth_code = 'LXHRNCHDCWUYAQGG'#邮箱授权码
 excelpath=os.path.join(parentDirPath, u'data\\t_01.xlsx')
 reportpath=os.path.join(parentDirPath, u'report\\{}Test_report.html'.format(time.strftime('%Y-%m-%d')))
