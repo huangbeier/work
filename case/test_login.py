@@ -1,13 +1,11 @@
 # -*- coding: utf-8 -*-
 #   __author__:黄贝尔
 #   2021-04-11
-from config.VarConfig import Chromepath, test_url, excelpath,auth_code
+from config.VarConfig import Chromepath, test_url, excelpath
 from mod.homepage_mod import Homepage_mod
 from selenium import webdriver
 import time
-import unittest
 from utils.exceltools import Excel_tools
-from ddt import ddt,data,unpack
 #不利用unittest进行测试 生成报告
 from utils.send_mail import SendMail
 

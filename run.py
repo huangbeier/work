@@ -1,18 +1,15 @@
 # -*- coding: utf-8 -*-
 #   __author__:黄贝尔
 #   2021-04-25
-import os
 import unittest
-import time
 
 from config.VarConfig import reportpath
 from utils.ClassicHTMLTestRunner import HTMLTestRunner
-from config.VarConfig import auth_code
-from utils.send_mail import SendMail
+
 #自动收集测试用例
 
 
-testcase = unittest.defaultTestLoader.discover('case','test_*.py')
+testcase = unittest.defaultTestLoader.discover('../work/case', 'test_*.py')
 
 #自动运行case并生成报告 htmltestrunner
 filePath = reportpath

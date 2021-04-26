@@ -4,6 +4,7 @@
 import time
 import unittest
 from ddt import ddt, data, unpack
+
 from config.VarConfig import excelpath, Chromepath, test_url
 from mod.homepage_mod import Homepage_mod
 from obj.homepage_obj import Homepage_obj
@@ -31,8 +32,6 @@ class Test_login(unittest.TestCase):
     def setUp(self):
         self.driver.get(test_url)
         self.driver.maximize_window()
-    # def tearDown(self):
-    #     self.driver.quit()
     @classmethod
     def tearDownClass(cls):
         cls.driver.quit()
