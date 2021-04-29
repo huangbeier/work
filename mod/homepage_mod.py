@@ -13,7 +13,7 @@ class Homepage_mod:
         h_obj.input_username(username1)
         h_obj.input_password(password1)
         h_obj.click_login_btn()
-        driver.switch_to.default_content()
+        #driver.switch_to.default_content()
 
     def exit_login(self,driver):
         h_obj = Homepage_obj(driver)

@@ -39,6 +39,7 @@ class Loggings:
         return logger.error(msg)
 
 
+
 loggings = Loggings()
 if __name__ == '__main__':
     loggings.info("中文test")
@@ -50,3 +51,4 @@ if __name__ == '__main__':
     n1 = "cool"
     n2 = [1, 2, 3]
     logger.info(f'If you are using Python {n1}, prefer {n2} of course!')
+
